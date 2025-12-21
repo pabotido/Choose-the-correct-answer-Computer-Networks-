@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Network Quiz – Choose the correct answer</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Basic fallback style (if CSS missing) -->
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b1220;
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- ================= HEADER ================= -->
+    <header class="top">
+      <h1>Choose the correct answer</h1>
+      <p class="sub">Computer Networks – Multiple Choice Quiz</p>
+
+      <div class="meta">
+        <div class="pill" id="progressText">Question 0/0</div>
+        <div class="pill" id="scoreText">Score: 0</div>
+      </div>
+
+      <div class="progress">
+        <div class="bar" id="progressBar"></div>
+      </div>
+    </header>
+
+    <!-- ================= QUIZ CARD ================= -->
+    <main class="card">
+
+      <!-- Question -->
+      <div class="q">
+        <div class="q-no" id="qNo">Câu</div>
+        <div class="q-text" id="qText">Loading question...</div>
+      </div>
+
+      <!-- Options -->
+      <div class="options" id="options">
+        <!-- JS will inject A/B/C/D buttons here -->
+      </div>
+
+      <!-- Feedback -->
+      <div class="feedback" id="feedback"></div>
+
+      <!-- Navigation -->
+      <div class="controls">
+        <button class="btn ghost" id="backBtn">Back</button>
+        <button class="btn" id="nextBtn">Next</button>
+      </div>
+
+      <!-- Restart -->
+      <div class="controls">
+        <button class="btn danger" id="restartBtn">Restart (Random Again)</button>
+      </div>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="foot">
+      <p>
+        ✔ Random question order <br>
+        ✔ Random A / B / C / D answers <br>
+        ✔ Feedback: <b>Right</b> / <b>Understand</b>
+      </p>
+    </footer>
+
+  </div>
+  <!-- ================= SCRIPT ================= -->
+    <script src="script.js?v=2"></script>
+</body>
+</html>
