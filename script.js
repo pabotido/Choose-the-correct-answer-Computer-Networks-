@@ -1,3 +1,4 @@
+console.log("SCRIPT UPDATED", Date.now());
 // =====================================================
 // RANDOM QUIZ ENGINE
 // - Random order of questions
